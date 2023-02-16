@@ -9,7 +9,7 @@
 	  <meta name="keyword" content="">
 	  <meta name="author"  content=""/>
       <!-- Page Title -->
-      <title>Dashboard 1 | Adminify - Multipurpose Admin Dashboard Template</title>
+      <title>Sisbela</title>
       <!-- Main CSS -->			
       <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
       <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
@@ -38,7 +38,7 @@
          <!-- Page Sidebar Start -->
          <!--================================-->
          <div class="page-sidebar">
-            <a class="logo-box" href="app-calendar.html">
+            <a class="logo-box" href="template/calendar.html">
             <span><img src="assets/images/logo-white.png" alt=""></span>
             <i class="ion-aperture" id="fixed-sidebar-toggle-button"></i>
             <i class="ion-ios-close-empty" id="sidebar-toggle-button-close"></i>
@@ -51,9 +51,9 @@
                         <span>Agenda</span><i class="accordion-icon fa fa-angle-left"></i></a>
                         <ul class="sub-menu" style="display: block;">
                            <!-- Active Page -->
-                           <li class="active"><a href="app-calendar.html">Agendamentos</a></li>
-                           <li><a href="app-calendar.html">Ordenar </a></li>
-                           <li><a href="app-calendar.html">Localizar Agendamentos</a></li>
+                           <li class="active"><a href="template/calendar.html">Agendamentos</a></li>
+                           <li><a href="template/calendar.html">Ordenar </a></li>
+                           <li><a href="template/calendar.html">Localizar Agendamentos</a></li>
                         </ul>
                      </li>
                      <li>
@@ -545,76 +545,18 @@
                   <!--================================-->
                   <div class="pageheader pd-y-25">
                      <div class="pd-t-5 pd-b-5">
-                        <h1 class="pd-0 mg-0 tx-20 text-overflow">Dashboard v.1</h1>
+                        <h1 class="pd-0 mg-0 tx-20 text-overflow">Agenda</h1>
                      </div>
                      <div class="breadcrumb pd-0 mg-0">
                         <a class="breadcrumb-item" href="index.html"><i class="icon ion-ios-home-outline"></i> Home</a>
-                        <a class="breadcrumb-item" href="javascript:void(0)">Dashboard</a>
-                        <span class="breadcrumb-item active">Dashboard v.1</span>
-                     </div>
+                        <a class="breadcrumb-item" href="javascript:void(0)">Calendario</a>
+                        </div>
                   </div>
                   <!--/ Breadcrumb End -->
                   <!--================================-->
                   <!-- Count Card Start -->
                   <!--================================-->
-                  <div class="row clearfix">
-                     <div class="col-xl-3 col-md-6">
-                        <div class="card bg-teal mb-4 shadow-1">
-                           <div class="card-body card-img">
-                              <div class="card-icon">
-                                 <i class="ion-ios-analytics float-right"></i>
-                              </div>
-                              <div class="text-white">
-                                 <h6 class="mb-0 text-uppercase tx-13">Orders</h6>
-                                 <h4 class="mg-b-40">587</h4>
-                                 <span class="badge badge-warning ft-right mg-r-10"> +31% </span> <span>From previous period</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-3 col-md-6">
-                        <div class="card bg-danger mb-4 shadow-1">
-                           <div class="card-body card-img">
-                              <div class="card-icon">
-                                 <i class="ion-ios-basketball-outline float-right"></i>
-                              </div>
-                              <div class="text-white">
-                                 <h6 class="mb-0 text-uppercase tx-13">Revenue</h6>
-                                 <h4 class="mg-b-40">$4,746</h4>
-                                 <span class="badge badge-info ft-right mg-r-10"> -15% </span> <span>From previous period</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-3 col-md-6">
-                        <div class="card bg-primary mb-4 shadow-1">
-                           <div class="card-body card-img">
-                              <div class="card-icon">
-                                 <i class="ion-ios-lightbulb-outline float-right"></i>
-                              </div>
-                              <div class="text-white">
-                                 <h6 class="mb-0 text-uppercase tx-13">Average Price</h6>
-                                 <h4 class="mg-b-40">$24.4</h4>
-                                 <span class="badge badge-warning ft-right mg-r-10"> 10% </span> <span>From previous period</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-3 col-md-6">
-                        <div class="card bg-info mb-4 shadow-1">
-                           <div class="card-body card-img">
-                              <div class="card-icon">
-                                 <i class="ion-ios-pie-outline float-right"></i>
-                              </div>
-                              <div class="text-white">
-                                 <h6 class="mb-0 text-uppercase tx-13">Product Sold</h6>
-                                 <h4 class="mg-b-40">$2,390</h4>
-                                 <span class="badge badge-danger ft-right mg-r-10"> +67% </span> <span>From previous period</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+
                   <!--/ Count Card End -->
                   <!--================================-->
                   <!-- Statistic Start -->
@@ -1216,244 +1158,7 @@
       <script src="assets/js/highlight.min.js"></script>
       <script src="assets/js/adminify.js"></script>
       <script src="assets/js/custom.js"></script>
-      <script>
-         // Toster Notification
-         $(document).ready(function() {
-         	setTimeout(function() {
-         		toastr.options = {
-         			positionClass: 'toast-top-right',
-         			closeButton: true,
-         			progressBar: true,
-         			showMethod: 'slideDown',
-         			timeOut: 5000
-         		};
-         		toastr.info('Multipurpose Admin Template', 'Hi, welcome to Adminify');
          
-         	}, 300);
-         
-         });		 
-         
-         // MORRIS AREA CHART 2
-         var chart = Morris.Area({
-         element: 'area2',
-         data: [{
-         period: 'January 16',
-         dl: 77,
-         up: 125
-         }, {
-         period: 'February 16',
-         dl: 227,
-         up: 88
-         }, {
-         period: 'March 16',
-         dl: 215,
-         up: 60
-         }, {
-         period: 'April 16',
-         dl: 239,
-         up: 57
-         }, {
-         period: 'May 16',
-         dl: 146,
-         up: 75
-         }, {
-         period: 'June 16',
-         dl: 197,
-         up: 57
-         }, {
-         period: 'July 16',
-         dl: 105,
-         up: 70
-         }, {
-         period: 'August 16',
-         dl: 115,
-         up: 106
-         }, {
-         period: 'September 16',
-         dl: 239,
-         up: 187
-         }, {
-         period: 'October 16',
-         dl: 97,
-         up: 57
-         }, {
-         period: 'November 16',
-         dl: 189,
-         up: 70
-         }, {
-         period: 'December 16',
-         dl: 65,
-         up: 30
-         }, {
-         period: 'January 17',
-         dl: 35,
-         up: 90
-         }, {
-         period: 'February 17',
-         dl: 127,
-         up: 58
-         }, {
-         period: 'March 17',
-         dl: 115,
-         up: 46
-         }, {
-         period: 'April 17',
-         dl: 239,
-         up: 57
-         }, {
-         period: 'May 17',
-         dl: 46,
-         up: 75
-         }, {
-         period: 'June 17',
-         dl: 97,
-         up: 57
-         }, {
-         period: 'July 17',
-         dl: 105,
-         up: 70
-         }, {
-         period: 'August 17',
-         dl: 115,
-         up: 106
-         }, {
-         period: 'September 17',
-         dl: 239,
-         up: 187
-         }, {
-         period: 'October 17',
-         dl: 97,
-         up: 57
-         }, {
-         period: 'November 17',
-         dl: 189,
-         up: 70
-         }, {
-         period: 'January 17',
-         dl: 35,
-         up: 90
-         }, {
-         period: 'February 17',
-         dl: 127,
-         up: 58
-         }, {
-         period: 'March 17',
-         dl: 115,
-         up: 46
-         }, {
-         period: 'April 17',
-         dl: 239,
-         up: 57
-         }, {
-         period: 'May 17',
-         dl: 46,
-         up: 75
-         }, {
-         period: 'June 17',
-         dl: 97,
-         up: 57
-         }, {
-         period: 'July 17',
-         dl: 105,
-         up: 70
-         }, {
-         period: 'August 17',
-         dl: 115,
-         up: 106
-         }, {
-         period: 'September 17',
-         dl: 239,
-         up: 187
-         }, {
-         period: 'October 17',
-         dl: 97,
-         up: 57
-         }, {
-         period: 'November 17',
-         dl: 189,
-         up: 70
-         }, {
-         period: 'December 17',
-         dl: 65,
-         up: 30
-         }, {
-         period: 'January 18',
-         dl: 35,
-         up: 90
-         }, {
-         period: 'February 18',
-         dl: 127,
-         up: 58
-         }, {
-         period: 'March 18',
-         dl: 115,
-         up: 46
-         }, {
-         period: 'April 18',
-         dl: 239,
-         up: 57
-         }, {
-         period: 'May 18',
-         dl: 46,
-         up: 75
-         }, {
-         period: 'June 18',
-         dl: 97,
-         up: 57
-         }, {
-         period: 'July 18',
-         dl: 105,
-         up: 70
-         }, {
-         period: 'August 18',
-         dl: 115,
-         up: 106
-         }, {
-         period: 'September 18',
-         dl: 239,
-         up: 187
-         }, {
-         period: 'October 18',
-         dl: 97,
-         up: 57
-         }, {
-         period: 'November 18',
-         dl: 189,
-         up: 70
-         }, {
-         period: 'December 18',
-         dl: 65,
-         up: 30
-         }, {
-         period: 'January 19',
-         dl: 35,
-         up: 90
-         }],
-         gridEnabled: true,
-         gridLineColor: 'rgba(0,0,0,.1)',
-         gridTextColor: '#10171e',
-         gridTextSize: '11px',
-         behaveLikeLine: true,
-         smooth: true,
-         xkey: 'period',
-         ykeys: ['dl', 'up'],
-         labels: ['Visitor', 'Pageview'],
-         lineColors: ['#bfbfcf', '#17a2b8'],
-         pointSize: 0,
-         pointStrokeColors: ['#17a2b8'],
-         lineWidth: 0,
-         resize: true,
-         hideHover: 'auto',
-         fillOpacity: 0.9,
-         parseTime: false
-         });
-         
-         chart.options.labels.forEach(function (label, i) {
-         var legendItem = $('<div class=\'morris-legend-items\'></div>').text(label);
-         $('<span></span>').css('background-color', chart.options.lineColors[i]).prependTo(legendItem);
-         $('#area-legend').append(legendItem)
-         })
-         
-      </script>
+      
    </body>
 </html>
